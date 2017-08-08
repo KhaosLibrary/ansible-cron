@@ -1,0 +1,11 @@
+# Example Configuration
+# ---------------------
+# Do not include directly, instead configure as needed before including this role.
+---
+khaos:
+  cron:
+    jobs:
+      - name: magento
+        schedule: * * * * *
+        user: www-data
+        command: cd /var/www/application && bin/magento cron

@@ -1,0 +1,5 @@
+---
+- name: enable cron supervisor service
+  template:
+    src: supervisor/cron.conf.j2
+    dest: /etc/supervisor/conf.d/cron.conf

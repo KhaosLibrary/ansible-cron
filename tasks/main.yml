@@ -1,0 +1,8 @@
+---
+
+- name: setup cron jobs
+  include: jobs.yml
+
+- name: setup cron supervisor service
+  include: supervisor.yml
+  when: khaos.container == true
