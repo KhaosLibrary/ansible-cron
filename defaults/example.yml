@@ -2,10 +2,10 @@
 # ---------------------
 # Do not include directly, instead configure as needed before including this role.
 ---
-khaos:
+swinxy:
   cron:
     jobs:
       - name: magento
         schedule: * * * * *
         user: www-data
-        command: cd /var/www/application && bin/magento cron
+        command: cd /application && bin/magento cron

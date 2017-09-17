@@ -5,4 +5,4 @@
     dest: /etc/cron.d/{{ cron.name }}
   vars:
     cron: "{{ item }}"
-  with_items: "{{ khaos.cron.jobs }}"
+  with_items: "{{ swinxy.cron.jobs }}"
