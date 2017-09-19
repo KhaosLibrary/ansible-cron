@@ -2,10 +2,9 @@
 # ---------------------
 # Do not include directly, instead configure as needed before including this role.
 ---
-swinxy:
-  cron:
-    jobs:
-      - name: magento
-        schedule: * * * * *
-        user: www-data
-        command: cd /application && bin/magento cron
+cron:
+  jobs:
+    - name: magento
+      schedule: * * * * *
+      user: www-data
+      command: cd /application && bin/magento cron
